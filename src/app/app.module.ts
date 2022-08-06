@@ -10,6 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 */
 import { MenuComponent } from './component/menu/menu.component';
 import { PagesModule } from './pages/pages.module';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PagesModule } from './pages/pages.module';
     BrowserModule,
     AppRoutingModule,
     AppRoutingModule,
-    PagesModule
+    PagesModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,17 @@
-<p>posts works!</p>
+<h1>Posts</h1>
+
+<u class="list-group">
+    <!--
+    <li *ngFor="let mensaje of mensajes" class="list-group-item">
+    <h2>{{mensaje.title}}</h2>
+    <p>
+        {{mensaje.body}}
+    </p> 
+    vamos a utilizar una tuberia '|' -->  
+    <li *ngFor="let mensaje of mensajes | async" class="list-group-item">
+    <h2>{{mensaje.title}}</h2>
+    <p>
+        {{mensaje.body}}
+    </p> 
+</li>
+</u>
