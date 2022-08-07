@@ -15,7 +15,10 @@
         </p> 
     </li>--> 
 
-    <app-post *ngFor="let mensaje of mensajes | async"
-    [mensajeChild]="mensaje"></app-post>
+    <app-post 
+        *ngFor="let mensaje of mensajes | async"
+        [mensajeChild]="mensaje" 
+        (clickPost)="escuchaClick($event)">
+    </app-post>
 
 </u>
